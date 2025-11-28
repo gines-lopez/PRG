@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
     
     
       
@@ -1707,7 +1707,7 @@
 <h2 id="actividades">Actividades<a class="headerlink" href="#actividades" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
-<p><strong><abbr title="Actividades de clase.">AC</abbr> 614</strong> (<abbr title="Desarrolla programas organizados en clases analizando y aplicando los principios de la programación orientada a objetos.">RA4</abbr>/ <abbr title="Se ha reconocido la sintaxis, estructura y componentes típicos de una clase.">CE4a</abbr> <abbr title="Se han definido clases.">CE4b</abbr> <abbr title="Se han creado constructores.">CE4d</abbr> <abbr title="Se han desarrollado programas que instancien y utilicen objetos de las clases creadas anteriormente.">CE4e</abbr> <abbr title="Se han utilizado mecanismos para controlar la visibilidad de las clases y de sus miembros.">CE4f</abbr> / <abbr title="Escala de valores.">IC1</abbr> / 3p).Crea una clase COrdenador con los siguientes atributos: marca (Mitac, Toshiba, Ast),
+<p><strong><abbr title="Actividades de clase.">AC</abbr> 614</strong> (<abbr title="Desarrolla programas organizados en clases analizando y aplicando los principios de la programación orientada a objetos.">RA4</abbr>/ <abbr title="Se ha reconocido la sintaxis, estructura y componentes típicos de una clase.">CE4a</abbr> <abbr title="Se han definido clases.">CE4b</abbr> <abbr title="Se han creado constructores.">CE4d</abbr> <abbr title="Se han desarrollado programas que instancien y utilicen objetos de las clases creadas anteriormente.">CE4e</abbr> <abbr title="Se han utilizado mecanismos para controlar la visibilidad de las clases y de sus miembros.">CE4f</abbr> / <abbr title="Escala de valores.">IC1</abbr> / 1p).Crea una clase COrdenador con los siguientes atributos: marca (Mitac, Toshiba, Ast),
 procesador (Intel, AMD) y pantalla (TFT, DSTN, STN). </p>
 <p>Los atributos también pueden incluir información sobre el estado del objeto:</p>
 <ul>
@@ -1722,74 +1722,88 @@ procesador (Intel, AMD) y pantalla (TFT, DSTN, STN). </p>
 <p>La clase va a emplear su constructor por defecto por lo que no hay que codificar ninguno. </p>
 <p>En el <code>main</code> realizar la simulación y comprobación que consideréis.</p>
 </li>
+<li>
+<p><strong><abbr title="Actividades de clase.">AC</abbr> 615</strong> (<abbr title="Desarrolla programas organizados en clases analizando y aplicando los principios de la programación orientada a objetos.">RA4</abbr>/ <abbr title="Se ha reconocido la sintaxis, estructura y componentes típicos de una clase.">CE4a</abbr> <abbr title="Se han definido clases.">CE4b</abbr> <abbr title="Se han creado constructores.">CE4d</abbr> <abbr title="Se han desarrollado programas que instancien y utilicen objetos de las clases creadas anteriormente.">CE4e</abbr> <abbr title="Se han utilizado mecanismos para controlar la visibilidad de las clases y de sus miembros.">CE4f</abbr> / <abbr title="Escala de valores.">IC1</abbr> / 1p). Supón que deseamos modificar el programa de la <strong><abbr title="Actividades de clase.">AC</abbr> 611</strong>:</p>
+<ul>
+<li>a. Primero debes utilizar otra clase distinta <code>COrdenadorApp</code> para el método <code>main</code>. Es decir, tendremos dos clases <code>COrdenador</code> y <code>COrdenadorApp</code>.</li>
+<li>b. A continuación, cambia los especificadores de acceso de los atributos a privado y codifica los métodos <code>getters</code> y <code>setters</code>.</li>
+<li>c. Codifica un constructor de la clase al cual se le pasará como parámetros los atributos de cada objeto de la clase <code>COrdenador</code>.</li>
+<li>d. Finalmente realiza un cambio en la marca del objeto <code>ord1</code> y vuelve a mostrar el estado.</li>
+</ul>
+<p>En el <code>main</code> realizar la simulación y comprobación que consideréis.</p>
+</li>
+<li>
+<p><strong><abbr title="Actividades de clase.">AC</abbr> 616</strong> (<abbr title="Desarrolla programas organizados en clases analizando y aplicando los principios de la programación orientada a objetos.">RA4</abbr>/ <abbr title="Se ha reconocido la sintaxis, estructura y componentes típicos de una clase.">CE4a</abbr> <abbr title="Se han definido clases.">CE4b</abbr> <abbr title="Se han creado constructores.">CE4d</abbr> <abbr title="Se han desarrollado programas que instancien y utilicen objetos de las clases creadas anteriormente.">CE4e</abbr> <abbr title="Se han utilizado mecanismos para controlar la visibilidad de las clases y de sus miembros.">CE4f</abbr> / <abbr title="Escala de valores.">IC1</abbr> / 1p). Codifica un programa siguiendo estas instrucciones:</p>
+<ul>
+<li>Genera un nuevo proyecto llamado <code>PeliculaApp</code>. Este albergará la clase <code>PeliculaApp</code> que contendrá el método <code>main</code>.</li>
+<li>Crea una segunda clase <code>Pelicula</code> dentro del mismo proyecto. Esta clase contendrá los siguientes atributos: Título, Director, Género y Duración.</li>
+<li>Genera los métodos <code>get</code> y <code>set</code> necesarios para cada atributo.</li>
+<li>
+<p>Crea el método <code>toTexto()</code> para mostrar la información relativa a la película con el siguiente formato: </p>
+<ul>
+<li>“La película titulada [Titulo] de género [Género] dirigida por [Director] tiene una duración de [Duración] minutos”.</li>
+</ul>
+</li>
+<li>
+<p>Crea 2 objetos Película (los valores que se quieran) y muéstralos por pantalla.</p>
+</li>
+<li>Indica cuál de los 2 tiene mayor duración.</li>
+</ul>
+<p>En el main realizar la simulación y comprobación que consideréis.</p>
+</li>
+<li>
+<p><strong><abbr title="Actividades de clase.">AC</abbr> 617</strong> (<abbr title="Desarrolla programas organizados en clases analizando y aplicando los principios de la programación orientada a objetos.">RA4</abbr>/ <abbr title="Se ha reconocido la sintaxis, estructura y componentes típicos de una clase.">CE4a</abbr> <abbr title="Se han definido clases.">CE4b</abbr> <abbr title="Se han creado constructores.">CE4d</abbr> <abbr title="Se han desarrollado programas que instancien y utilicen objetos de las clases creadas anteriormente.">CE4e</abbr> <abbr title="Se han utilizado mecanismos para controlar la visibilidad de las clases y de sus miembros.">CE4f</abbr> / <abbr title="Escala de valores.">IC1</abbr> / 3p). Se quiere calcular el área de un terreno a partir de sus coordenadas. Para ello:</p>
+<ul>
+<li>Crea una clase llamada <code>Posicion</code> con los atributos x, y (coordenadas) y una clase principal <code>PosicionMain</code> que contenga el método <code>main</code>.</li>
+<li>Crea un método que calcule el área del terreno de la siguiente figura, teniendo en cuenta que: Área = a * b.</li>
+</ul>
+<p>En el main realizar la simulación y comprobación que consideréis.</p>
+</li>
+<li>
+<p><strong><abbr title="Actividades de refuerzo.">AR</abbr> 618</strong> (<abbr title="Desarrolla programas organizados en clases analizando y aplicando los principios de la programación orientada a objetos.">RA4</abbr>/ <abbr title="Se ha reconocido la sintaxis, estructura y componentes típicos de una clase.">CE4a</abbr> <abbr title="Se han definido clases.">CE4b</abbr> <abbr title="Se han creado constructores.">CE4d</abbr> <abbr title="Se han desarrollado programas que instancien y utilicen objetos de las clases creadas anteriormente.">CE4e</abbr> <abbr title="Se han utilizado mecanismos para controlar la visibilidad de las clases y de sus miembros.">CE4f</abbr> / <abbr title="Escala de valores.">IC1</abbr> / 3p). Escribe una clase <code>Fraccion</code> para representar fracciones. La clase tendrá dos atributos
+de tipo entero: <code>num</code> (numerador) y <code>den</code> (denominador) solo accesibles desde su propia clase. La clase debe contener los constructores y métodos adecuados para que este método <code>main</code> de la clase <code>AppMain</code> funcione de forma correcta:</p>
+<ul>
+<li>Se debe controlar que el denominador de una fracción no pueda valer cero. Si el valor del segundo parámetro es cero en el constructor, se asignará el valor 1 al denominador.</li>
+<li>Para que una instrucción <code>println</code> como la siguiente: <code>System.out.println(f1 + " + " + f2 + " = " + suma);</code> muestre por pantalla: <code>1/4 + 1/2 = 3/4</code>, la clase debe tener un método <code>toTexto()</code> que devuelva un String con el contenido de la fracción de la forma: numerador/denominador.</li>
+</ul>
+<p>En el main realizar la simulación y comprobación que consideréis.</p>
+</li>
+<li>
+<p><strong><abbr title="Prácticas">PR</abbr> 619</strong> (<abbr title="Desarrolla programas organizados en clases analizando y aplicando los principios de la programación orientada a objetos.">RA4</abbr>/ <abbr title="Se ha reconocido la sintaxis, estructura y componentes típicos de una clase.">CE4a</abbr> <abbr title="Se han definido clases.">CE4b</abbr> <abbr title="Se han creado constructores.">CE4d</abbr> <abbr title="Se han desarrollado programas que instancien y utilicen objetos de las clases creadas anteriormente.">CE4e</abbr> <abbr title="Se han utilizado mecanismos para controlar la visibilidad de las clases y de sus miembros.">CE4f</abbr> / <abbr title="Rúbrica actividad individual.">IC2</abbr> / 5p). Escribe una clase con el nombre <code>Calculadora</code>. La clase debe tener dos campos o atributos (variable miembro) con los nombres <code>primerNumero</code> y <code>segundoNumero</code>, ambos de tipo <code>double</code>. Codifica los siguientes métodos:</p>
+<ol>
+<li>
+<p>Getters:</p>
+<ul>
+<li>Método llamado <code>getPrimerNumero</code> sin ningún parámetro, debe devolver el valor del campo <code>primerNumero</code>.</li>
+<li>Método llamado <code>getSegundoNumero</code> sin ningún parámetro, debe devolver el valor del campo <code>segundoNumero</code>.</li>
+</ul>
+</li>
+<li>
+<p>Setters:</p>
+<ul>
+<li>Método llamado <code>setPrimerNumero</code> con un parámetro de tipo <code>double</code>, debe establecer el valor del campo <code>primerNumero</code>.</li>
+<li>Método llamado <code>setSegundoNumero</code> con un parámetro de tipo <code>double</code>, debe establecer el valor del campo <code>segundoNumero</code>.</li>
+</ul>
+</li>
+<li>
+<p>Otros métodos:</p>
+<ul>
+<li>Método llamado <code>getResultadoSuma</code> sin ningún parámetro, debe devolver el resultado de sumar los valores de campo de <code>primerNumero</code> y <code>segundoNumero</code>.</li>
+<li>Método llamado <code>getResultadoResta</code> sin ningún parámetro, debe devolver el resultado de restar los valores de campo de <code>segundoNumero</code> del <code>primerNumero</code>.</li>
+<li>Método llamado <code>getMultiplicationResult</code> sin ningún parámetro, debe devolver el resultado de multiplicar los valores de campo de <code>primerNumero</code> y <code>segundoNumero</code>.</li>
+<li>Método llamado <code>getDivisionResult</code> sin ningún parámetro, debe devolver el resultado de dividir los valores de campo de <code>primerNumero</code> por <code>segundoNumero</code>. En caso de  que el valor de <code>segundoNumero</code> sea 0, devuelve 0.</li>
+</ul>
+</li>
+</ol>
+<p>Test, código para probar la clase <code>Calculadora</code>. Escribe este código en una clase <code>Main</code>, dentro del método <code>main</code>. Comprueba que realiza correctamente todas las operaciones.</p>
+<div class="admonition tip">
+<p class="admonition-title">Ayuda</p>
+<p>En total debes tener 8 métodos en la clase Calculadora. Los métodos NO deben ser public static, solo public.</p>
+</div>
+<p>Genera un método <code>main</code> donde pruebes todos los métodos. Recuerda que siempre que se puedan pedir datos por teclado, se han de pedir</p>
+</li>
 </ul>
 <div style="display:none">
-- **AC 612** (RA4/ CE4a CE4b CE4d CE4e CE4f / IC1 / 3p). Supón que deseamos modificar el programa de la **AC 611**:
-
-    - a. Primero debes utilizar otra clase distinta `COrdenadorApp` para el método `main`. Es decir, tendremos dos clases `COrdenador` y `COrdenadorApp`.
-    - b. A continuación, cambia los especificadores de acceso de los atributos a privado y codifica los métodos `getters` y `setters`.
-    - c. Codifica un constructor de la clase al cual se le pasará como parámetros los atributos de cada objeto de la clase `COrdenador`.
-    - d. Finalmente realiza un cambio en la marca del objeto `ord1` y vuelve a mostrar el estado.
-
-    En el `main` realizar la simulación y comprobación que consideréis.
-
-- **AC 613** (RA4/ CE4a CE4b CE4d CE4e CE4f / IC1 / 3p). Codifica un programa siguiendo estas instrucciones:
-
-    - Genera un nuevo proyecto llamado `PeliculaApp`. Este albergará la clase `PeliculaApp` que contendrá el método `main`.
-    - Crea una segunda clase `Pelicula` dentro del mismo proyecto. Esta clase contendrá los siguientes atributos: Título, Director, Género y Duración.
-    - Genera los métodos `get` y `set` necesarios para cada atributo.
-    - Crea el método `toTexto()` para mostrar la información relativa a la película con el siguiente formato: 
-
-        - “La película titulada [Titulo] de género [Género] dirigida por [Director] tiene una duración de [Duración] minutos”.
-
-    - Crea 2 objetos Película (los valores que se quieran) y muéstralos por pantalla.
-    - Indica cuál de los 2 tiene mayor duración.
-
-    En el main realizar la simulación y comprobación que consideréis.
-
-- **AC 614** (RA4/ CE4a CE4b CE4d CE4e CE4f / IC1 / 3p). Se quiere calcular el área de un terreno a partir de sus coordenadas. Para ello:
-
-    - Crea una clase llamada `Posicion` con los atributos x, y (coordenadas) y una clase principal `PosicionMain` que contenga el método `main`.
-    - Crea un método que calcule el área del terreno de la siguiente figura, teniendo en cuenta que: Área = a * b.
-
-    En el main realizar la simulación y comprobación que consideréis.
-
-- **AR 615** (RA4/ CE4a CE4b CE4d CE4e CE4f / IC1 / 3p). Escribe una clase `Fraccion` para representar fracciones. La clase tendrá dos atributos
-de tipo entero: `num` (numerador) y `den` (denominador) solo accesibles desde su propia clase. La clase debe contener los constructores y métodos adecuados para que este método `main` de la clase `AppMain` funcione de forma correcta:
-
-    - Se debe controlar que el denominador de una fracción no pueda valer cero. Si el valor del segundo parámetro es cero en el constructor, se asignará el valor 1 al denominador.
-    - Para que una instrucción `println` como la siguiente: `System.out.println(f1 + " + " + f2 + " = " + suma);` muestre por pantalla: `1/4 + 1/2 = 3/4`, la clase debe tener un método `toTexto()` que devuelva un String con el contenido de la fracción de la forma: numerador/denominador.
-
-    En el main realizar la simulación y comprobación que consideréis.
-
-- **PR 616** (RA4/ CE4a CE4b CE4d CE4e CE4f / IC2 / 5p). Escribe una clase con el nombre `Calculadora`. La clase debe tener dos campos o atributos (variable miembro) con los nombres `primerNumero` y `segundoNumero`, ambos de tipo `double`. Codifica los siguientes métodos:
-
-    1. Getters:
-
-        - Método llamado `getPrimerNumero` sin ningún parámetro, debe devolver el valor del campo `primerNumero`.
-        - Método llamado `getSegundoNumero` sin ningún parámetro, debe devolver el valor del campo `segundoNumero`.
-
-    2. Setters:
-
-        - Método llamado `setPrimerNumero` con un parámetro de tipo `double`, debe establecer el valor del campo `primerNumero`.
-        - Método llamado `setSegundoNumero` con un parámetro de tipo `double`, debe establecer el valor del campo `segundoNumero`.
-
-    3. Otros métodos:
-
-        - Método llamado `getResultadoSuma` sin ningún parámetro, debe devolver el resultado de sumar los valores de campo de `primerNumero` y `segundoNumero`.
-        - Método llamado `getResultadoResta` sin ningún parámetro, debe devolver el resultado de restar los valores de campo de `segundoNumero` del `primerNumero`.
-        - Método llamado `getMultiplicationResult` sin ningún parámetro, debe devolver el resultado de multiplicar los valores de campo de `primerNumero` y `segundoNumero`.
-        - Método llamado `getDivisionResult` sin ningún parámetro, debe devolver el resultado de dividir los valores de campo de `primerNumero` por `segundoNumero`. En caso de  que el valor de `segundoNumero` sea 0, devuelve 0.
-
-    Test, código para probar la clase `Calculadora`. Escribe este código en una clase `Main`, dentro del método `main`. Comprueba que realiza correctamente todas las operaciones.
-
-    !!! tip "Ayuda"
-
-        En total debes tener 8 métodos en la clase Calculadora. Los métodos NO deben ser public static, solo public.
-
-
-    Genera un método `main` donde pruebes todos los métodos. Recuerda que siempre que se puedan pedir datos por teclado, se han de pedir
-
 
 - **PR 617** (RA4/ CE4a CE4b CE4d CE4e CE4f / IC2 / 5p). Codifica una clase `Persona`. La clase debe tener tres campos con los nombres nombre, apellido de tipo String y edad de tipo entero. Escribe los siguientes métodos:
 
@@ -1975,7 +1989,8 @@ función de la dieta a la que pertenezcan. Para ello se deberán desarrollar las
   
 </div>
       
-        <div class="md-social">
+        
+<div class="md-social">
   
     
     
@@ -2043,10 +2058,10 @@ función de la dieta a la que pertenezcan. Para ello se deberán desarrollar las
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["header.autohide", "toc.integrate", "navigation.indexes", "navigation.top", "navigation.tracking", "navigation.footer", "toc.follow", "content.tooltips", "content.code.copy"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["header.autohide", "toc.integrate", "navigation.indexes", "navigation.top", "navigation.tracking", "navigation.footer", "toc.follow", "content.tooltips", "content.code.copy"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.50899def.min.js"></script>
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
