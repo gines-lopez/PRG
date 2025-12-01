@@ -1748,7 +1748,7 @@ procesador (Intel, AMD) y pantalla (TFT, DSTN, STN). </p>
 <p>En el <code>main</code> realizar la simulación y comprobación que consideréis.</p>
 </li>
 <li>
-<p><strong><abbr title="Actividades de clase.">AC</abbr> 615</strong> (<abbr title="Desarrolla programas organizados en clases analizando y aplicando los principios de la programación orientada a objetos.">RA4</abbr>/ <abbr title="Se ha reconocido la sintaxis, estructura y componentes típicos de una clase.">CE4a</abbr> <abbr title="Se han definido clases.">CE4b</abbr> <abbr title="Se han creado constructores.">CE4d</abbr> <abbr title="Se han desarrollado programas que instancien y utilicen objetos de las clases creadas anteriormente.">CE4e</abbr> <abbr title="Se han utilizado mecanismos para controlar la visibilidad de las clases y de sus miembros.">CE4f</abbr> / <abbr title="Escala de valores.">IC1</abbr> / 1p). Supón que deseamos modificar el programa de la <strong><abbr title="Actividades de clase.">AC</abbr> 614</strong>:</p>
+<p><strong><abbr title="Actividades de clase.">AC</abbr> 615</strong> (<abbr title="Desarrolla programas organizados en clases analizando y aplicando los principios de la programación orientada a objetos.">RA4</abbr>/ <abbr title="Se ha reconocido la sintaxis, estructura y componentes típicos de una clase.">CE4a</abbr> <abbr title="Se han definido clases.">CE4b</abbr> <abbr title="Se han creado constructores.">CE4d</abbr> <abbr title="Se han desarrollado programas que instancien y utilicen objetos de las clases creadas anteriormente.">CE4e</abbr> <abbr title="Se han utilizado mecanismos para controlar la visibilidad de las clases y de sus miembros.">CE4f</abbr> / <abbr title="Escala de valores.">IC1</abbr> / 1p). Supón que deseamos modificar el programa de la <strong><abbr title="Actividades de clase.">AC</abbr> 614xºx</strong>:</p>
 <ul>
 <li>a. Primero debes utilizar otra clase distinta <code>COrdenadorApp</code> para el método <code>main</code>. Es decir, tendremos dos clases <code>COrdenador</code> y <code>COrdenadorApp</code>.</li>
 <li>b. A continuación, cambia los especificadores de acceso de los atributos a privado y codifica los métodos <code>getters</code> y <code>setters</code>.</li>
@@ -1827,34 +1827,41 @@ de tipo entero: <code>num</code> (numerador) y <code>den</code> (denominador) so
 </div>
 <p>Genera un método <code>main</code> donde pruebes todos los métodos. Recuerda que siempre que se puedan pedir datos por teclado, se han de pedir</p>
 </li>
+<li>
+<p><strong><abbr title="Prácticas">PR</abbr> 620</strong> (<abbr title="Desarrolla programas organizados en clases analizando y aplicando los principios de la programación orientada a objetos.">RA4</abbr>/ <abbr title="Se ha reconocido la sintaxis, estructura y componentes típicos de una clase.">CE4a</abbr> <abbr title="Se han definido clases.">CE4b</abbr> <abbr title="Se han creado constructores.">CE4d</abbr> <abbr title="Se han desarrollado programas que instancien y utilicen objetos de las clases creadas anteriormente.">CE4e</abbr> <abbr title="Se han utilizado mecanismos para controlar la visibilidad de las clases y de sus miembros.">CE4f</abbr> / <abbr title="Rúbrica actividad individual.">IC2</abbr> / 5p). Codifica una clase <code>Persona</code>. La clase debe tener tres campos con los nombres nombre, apellido de tipo String y edad de tipo entero. Escribe los siguientes métodos:</p>
+<ol>
+<li>
+<p>Getters:</p>
+<ul>
+<li>Método llamado <code>getNombre</code> sin ningún parámetro, debe devolver el valor del campo nombre.</li>
+<li>Método llamado <code>getApellido</code> sin ningún parámetro, debe devolver el valor del campo apellido.</li>
+<li>Método llamado <code>getEdad</code> sin ningún parámetro, debe devolver el valor del campo de edad.</li>
+</ul>
+</li>
+<li>
+<p>Setters:</p>
+<ul>
+<li>Método llamado <code>setNombre</code> con un parámetro de tipo <code>String</code>, debe establecer el valor del campo nombre.</li>
+<li>Método llamado <code>setApellido</code> con un parámetro de tipo <code>String</code>, debe establecer el valor del campo apellido.</li>
+<li>Método llamado <code>setEdad</code> con un parámetro de tipo <code>int</code>, debe establecer el valor del campo de edad. Si el parámetro es menor que 0 o mayor que 100, establece el valor del campo de edad en 0.</li>
+</ul>
+</li>
+<li>
+<p>Otros métodos:</p>
+</li>
+</ol>
+<ul>
+<li>El método llamado <code>esAdolescente</code> sin ningún parámetro, debe devolver verdadero si el valor del campo de edad es mayor que 12 y menor que 20; de lo contrario, devuelve falso.</li>
+<li>Método llamado <code>getFullName</code> sin ningún parámetro, debe devolver el nombre completo de la persona. En caso de que los campos nombre y apellido estén vacíos, las cadenas devuelven una cadena vacía. En caso de que apellido sea una cadena vacía, devuelva nombre. En caso de que nombre sea una cadena vacía, devuelve apellido.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">isEmpty</p>
+<p>Para verificar si un String está vacío, usa el método <code>isEmpty</code> de la clase <code>String</code>. Por ejemplo, <code>nombre.isEmpty()</code> devuelve verdadero si el String está vacío o en otras palabras, cuando el String no contiene ningún carácter.</p>
+</div>
+<p>Recuerda que siempre que se puedan pedir datos por teclado, se han de pedir.</p>
+</li>
 </ul>
 <div style="display:none">
-
-- **PR 617** (RA4/ CE4a CE4b CE4d CE4e CE4f / IC2 / 5p). Codifica una clase `Persona`. La clase debe tener tres campos con los nombres nombre, apellido de tipo String y edad de tipo entero. Escribe los siguientes métodos:
-
-    1. Getters:
-
-        - Método llamado `getNombre` sin ningún parámetro, debe devolver el valor del campo nombre.
-        - Método llamado `getApellido` sin ningún parámetro, debe devolver el valor del campo apellido.
-        - Método llamado `getEdad` sin ningún parámetro, debe devolver el valor del campo de edad.
-
-    2. Setters:
-
-        - Método llamado `setNombre` con un parámetro de tipo `String`, debe establecer el valor del campo nombre.
-        - Método llamado `setApellido` con un parámetro de tipo `String`, debe establecer el valor del campo apellido.
-        - Método llamado `setEdad` con un parámetro de tipo `int`, debe establecer el valor del campo de edad. Si el parámetro es menor que 0 o mayor que 100, establece el valor del campo de edad en 0.
-
-    3. Otros métodos:
-
-    - El método llamado `esAdolescente` sin ningún parámetro, debe devolver verdadero si el valor del campo de edad es mayor que 12 y menor que 20; de lo contrario, devuelve falso.
-    - Método llamado `getFullName` sin ningún parámetro, debe devolver el nombre completo de la persona. En caso de que los campos nombre y apellido estén vacíos, las cadenas devuelven una cadena vacía. En caso de que apellido sea una cadena vacía, devuelva nombre. En caso de que nombre sea una cadena vacía, devuelve apellido.
-
-    !!! tip "isEmpty"
-
-        Para verificar si un String está vacío, usa el método `isEmpty` de la clase `String`. Por ejemplo, `nombre.isEmpty()` devuelve verdadero si el String está vacío o en otras palabras, cuando el String no contiene ningún carácter.
-
-    Recuerda que siempre que se puedan pedir datos por teclado, se han de pedir.
-
 - **PR 618** (RA4/ CE4a CE4b CE4d CE4e CE4f / IC2 / 5p). Codifica una clase con el nombre `Muro`. La clase necesita dos campos (variables de instancia) con nombre ancho y alto de tipo double. La clase debe tener dos constructores. El primer constructor (constructor por defecto sin parámetros). El segundo constructor tiene los parámetros de ancho y alto de tipo `double` y debe inicializar los campos. En caso de que el ancho sea menor que 0, debe establecer el valor del campo de ancho en 0, en caso de que el parámetro de altura sea menor que 0, debe establezca el valor del campo de altura en 0.
 
     Escribe los siguientes métodos (métodos de instancia):
