@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
     
     
       
@@ -1860,44 +1860,52 @@ de tipo entero: <code>num</code> (numerador) y <code>den</code> (denominador) so
 </div>
 <p>Recuerda que siempre que se puedan pedir datos por teclado, se han de pedir.</p>
 </li>
+<li>
+<p><strong><abbr title="Prácticas">PR</abbr> 621</strong> (<abbr title="Desarrolla programas organizados en clases analizando y aplicando los principios de la programación orientada a objetos.">RA4</abbr>/ <abbr title="Se ha reconocido la sintaxis, estructura y componentes típicos de una clase.">CE4a</abbr> <abbr title="Se han definido clases.">CE4b</abbr> <abbr title="Se han creado constructores.">CE4d</abbr> <abbr title="Se han desarrollado programas que instancien y utilicen objetos de las clases creadas anteriormente.">CE4e</abbr> <abbr title="Se han utilizado mecanismos para controlar la visibilidad de las clases y de sus miembros.">CE4f</abbr> / <abbr title="Rúbrica actividad individual.">IC2</abbr> / 5p). Codifica una clase con el nombre <code>Muro</code>. La clase necesita dos campos (variables de instancia) con nombre ancho y alto de tipo double. La clase debe tener dos constructores. El primer constructor (constructor por defecto sin parámetros). El segundo constructor tiene los parámetros de ancho y alto de tipo <code>double</code> y debe inicializar los campos. En caso de que el ancho sea menor que 0, debe establecer el valor del campo de ancho en 0, en caso de que el parámetro de altura sea menor que 0, debe establezca el valor del campo de altura en 0.</p>
+<p>Escribe los siguientes métodos (métodos de instancia):</p>
+<ul>
+<li>Método llamado <code>getAncho</code> sin ningún parámetro, devuelve el valor del campo ancho.</li>
+<li>Método llamado <code>getAlto</code> sin ningún parámetro, devuelve el valor del campo alto.</li>
+<li>Método llamado <code>setAncho</code> con un parámetro de tipo <code>double</code>, establece el valor del campo ancho. Si el parámetro es menor que 0, establece el valor del campo ancho en 0.</li>
+<li>Método llamado <code>setAlto</code> con un parámetro de tipo <code>double</code>, establece el valor del campo  alto. Si el parámetro es menor que 0, establece el valor del campo alto en 0.</li>
+<li>Método llamado <code>getArea</code> sin ningún parámetro, devuelve el área del muro.</li>
+</ul>
+<p>Genera un método <code>main</code> donde pruebes todos los métodos. Recuerda que siempre que se puedan pedir datos por teclado, se han de pedir.</p>
+</li>
+<li>
+<p><strong><abbr title="Prácticas">PR</abbr> 622</strong> (<abbr title="Desarrolla programas organizados en clases analizando y aplicando los principios de la programación orientada a objetos.">RA4</abbr>/ <abbr title="Se ha reconocido la sintaxis, estructura y componentes típicos de una clase.">CE4a</abbr> <abbr title="Se han definido clases.">CE4b</abbr> <abbr title="Se han creado constructores.">CE4d</abbr> <abbr title="Se han desarrollado programas que instancien y utilicen objetos de las clases creadas anteriormente.">CE4e</abbr> <abbr title="Se han utilizado mecanismos para controlar la visibilidad de las clases y de sus miembros.">CE4f</abbr> / <abbr title="Rúbrica actividad individual.">IC2</abbr> / 5p). La compañía Mundo Alfombra te ha pedido que escribas una aplicación que calcule el precio de las alfombras para habitaciones rectangulares. Para calcular el precio, se multiplica el área del piso (ancho por largo) por el precio por metro cuadrado de alfombra. </p>
+<div class="admonition note">
+<p class="admonition-title">Ejemplo</p>
+<p>El área de un piso que mide 12 metros de largo y 10 metros de ancho es 120 metros cuadrados, cubrir el piso con una alfombra que cuesta 8€ por metro cuadrado costaría 960€.</p>
+</div>
+<p>Vamos a crear las siguientes clases con sus constructores y métodos:</p>
+<ul>
+<li>
+<p>Codifica una clase con el nombre <code>Suelo</code>. La clase necesita dos campos (variables de instancia) con nombre ancho y largo de tipo <code>double</code>. La clase debe tener un constructor con parámetros ancho y largo de tipo double y debe inicializar los campos. En caso de
+que el parámetro de ancho sea menor que 0, se establecerá el valor del campo ancho en 0, en caso de que el parámetro largo sea menor que 0, se establecerá el valor del campo largo en 0. Escribe los siguientes métodos (métodos de instancia):</p>
+<ul>
+<li>Método llamado <code>getArea</code> sin ningún parámetro, devuelve el área calculada (ancho * largo).</li>
+<li>Método llamado <code>getArea</code> con un parámetro, devuelve el área calculada (ancho * ancho). Es cuadrada.</li>
+</ul>
+</li>
+<li>
+<p>Desarrolla una clase llamada <code>Alfombra</code> con un campo llamado coste de tipo <code>double</code>. Incluye el constructor de la clase con un parámetro para inicializar el campo coste. En caso de que el parámetro coste sea menor que 0, se establecerá el valor del campo
+coste en 0. Añade el siguiente método:</p>
+<ul>
+<li>Método llamado <code>getCoste</code> sin ningún parámetro, devuelve el valor del campo coste.</li>
+</ul>
+</li>
+<li>
+<p>Escribe una clase con el nombre <code>Calculadora</code> con dos campos (variables de instancia) suelo de tipo <code>Suelo</code> y alfombra de tipo <code>Alfombra</code>. Codifica el constructor parametrizado con los parámetros de suelo de tipo <code>Suelo</code> y alfombra de tipo <code>Alfombra</code> e inicializa los campos. Añade el siguiente método en la clase:</p>
+<ul>
+<li>Método <code>getCosteTotal</code> sin ningún parámetro, devuelve el coste total calculado para cubrir el piso con una alfombra.</li>
+</ul>
+</li>
+</ul>
+<p>Genera un método <code>main</code> donde pruebes todos los métodos. Recuerda que siempre que se puedan pedir datos por teclado, se han de pedir. Juega con el código y crea situaciones de prueba cuando tenemos ancho y largo con valores negativos. Y cuando nos dan un precio de coste negativo. Muestra las salidas por pantalla.</p>
+</li>
 </ul>
 <div style="display:none">
-- **PR 618** (RA4/ CE4a CE4b CE4d CE4e CE4f / IC2 / 5p). Codifica una clase con el nombre `Muro`. La clase necesita dos campos (variables de instancia) con nombre ancho y alto de tipo double. La clase debe tener dos constructores. El primer constructor (constructor por defecto sin parámetros). El segundo constructor tiene los parámetros de ancho y alto de tipo `double` y debe inicializar los campos. En caso de que el ancho sea menor que 0, debe establecer el valor del campo de ancho en 0, en caso de que el parámetro de altura sea menor que 0, debe establezca el valor del campo de altura en 0.
-
-    Escribe los siguientes métodos (métodos de instancia):
-
-    - Método llamado `getAncho` sin ningún parámetro, devuelve el valor del campo ancho.
-    - Método llamado `getAlto` sin ningún parámetro, devuelve el valor del campo alto.
-    - Método llamado `setAncho` con un parámetro de tipo `double`, establece el valor del campo ancho. Si el parámetro es menor que 0, establece el valor del campo ancho en 0.
-    - Método llamado `setAlto` con un parámetro de tipo `double`, establece el valor del campo  alto. Si el parámetro es menor que 0, establece el valor del campo alto en 0.
-    - Método llamado `getArea` sin ningún parámetro, devuelve el área del muro.
-
-    Genera un método `main` donde pruebes todos los métodos. Recuerda que siempre que se puedan pedir datos por teclado, se han de pedir.
-
-- **PR 619** (RA4/ CE4a CE4b CE4d CE4e CE4f / IC2 / 5p). La compañía Mundo Alfombra te ha pedido que escribas una aplicación que calcule el precio de las alfombras para habitaciones rectangulares. Para calcular el precio, se multiplica el área del piso (ancho por largo) por el precio por metro cuadrado de alfombra. 
-
-    !!! note "Ejemplo"
-
-        El área de un piso que mide 12 metros de largo y 10 metros de ancho es 120 metros cuadrados, cubrir el piso con una alfombra que cuesta 8€ por metro cuadrado costaría 960€.
-
-    Vamos a crear las siguientes clases con sus constructores y métodos:
-
-    - Codifica una clase con el nombre `Suelo`. La clase necesita dos campos (variables de instancia) con nombre ancho y largo de tipo `double`. La clase debe tener un constructor con parámetros ancho y largo de tipo double y debe inicializar los campos. En caso de
-    que el parámetro de ancho sea menor que 0, se establecerá el valor del campo ancho en 0, en caso de que el parámetro largo sea menor que 0, se establecerá el valor del campo largo en 0. Escribe los siguientes métodos (métodos de instancia):
-
-        - Método llamado `getArea` sin ningún parámetro, devuelve el área calculada (ancho * largo).
-        - Método llamado `getArea` con un parámetro, devuelve el área calculada (ancho * ancho). Es cuadrada.
-
-    - Desarrolla una clase llamada `Alfombra` con un campo llamado coste de tipo `double`. Incluye el constructor de la clase con un parámetro para inicializar el campo coste. En caso de que el parámetro coste sea menor que 0, se establecerá el valor del campo
-    coste en 0. Añade el siguiente método:
-
-        - Método llamado `getCoste` sin ningún parámetro, devuelve el valor del campo coste.
-
-    - Escribe una clase con el nombre `Calculadora` con dos campos (variables de instancia) suelo de tipo `Suelo` y alfombra de tipo `Alfombra`. Codifica el constructor parametrizado con los parámetros de suelo de tipo `Suelo` y alfombra de tipo `Alfombra` e inicializa los campos. Añade el siguiente método en la clase:
-
-        - Método `getCosteTotal` sin ningún parámetro, devuelve el coste total calculado para cubrir el piso con una alfombra.
-
-    Genera un método `main` donde pruebes todos los métodos. Recuerda que siempre que se puedan pedir datos por teclado, se han de pedir. Juega con el código y crea situaciones de prueba cuando tenemos ancho y largo con valores negativos. Y cuando nos dan un precio de coste negativo. Muestra las salidas por pantalla.
 
 - **PR 620** (RA4/ CE4a CE4b CE4d CE4e CE4f / IC2 / 5p). Crear una clase `Figura.java`. Escribe un método llamado area con un parámetro `double` llamado radio. El método debe devolver un valor `double` que represente el área de un círculo, calculada a partir del radio. Si el radio del parámetro es negativo, devuelve -1.0 para representar un valor no válido.
 
@@ -2021,7 +2029,8 @@ función de la dieta a la que pertenezcan. Para ello se deberán desarrollar las
   
 </div>
       
-        <div class="md-social">
+        
+<div class="md-social">
   
     
     
@@ -2089,10 +2098,10 @@ función de la dieta a la que pertenezcan. Para ello se deberán desarrollar las
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["header.autohide", "toc.integrate", "navigation.indexes", "navigation.top", "navigation.tracking", "navigation.footer", "toc.follow", "content.tooltips", "content.code.copy"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["header.autohide", "toc.integrate", "navigation.indexes", "navigation.top", "navigation.tracking", "navigation.footer", "toc.follow", "content.tooltips", "content.code.copy"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.50899def.min.js"></script>
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
