@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
     
     
       
@@ -1904,61 +1904,62 @@ coste en 0. Añade el siguiente método:</p>
 </ul>
 <p>Genera un método <code>main</code> donde pruebes todos los métodos. Recuerda que siempre que se puedan pedir datos por teclado, se han de pedir. Juega con el código y crea situaciones de prueba cuando tenemos ancho y largo con valores negativos. Y cuando nos dan un precio de coste negativo. Muestra las salidas por pantalla.</p>
 </li>
+<li>
+<p><strong><abbr title="Prácticas">PR</abbr> 623</strong> (<abbr title="Desarrolla programas organizados en clases analizando y aplicando los principios de la programación orientada a objetos.">RA4</abbr>/ <abbr title="Se ha reconocido la sintaxis, estructura y componentes típicos de una clase.">CE4a</abbr> <abbr title="Se han definido clases.">CE4b</abbr> <abbr title="Se han creado constructores.">CE4d</abbr> <abbr title="Se han desarrollado programas que instancien y utilicen objetos de las clases creadas anteriormente.">CE4e</abbr> <abbr title="Se han utilizado mecanismos para controlar la visibilidad de las clases y de sus miembros.">CE4f</abbr> / <abbr title="Rúbrica actividad individual.">IC2</abbr> / 5p). Crear una clase <code>Figura.java</code>. Escribe un método llamado area con un parámetro <code>double</code> llamado radio. El método debe devolver un valor <code>double</code> que represente el área de un círculo, calculada a partir del radio. Si el radio del parámetro es negativo, devuelve -1.0 para representar un valor no válido.</p>
+<p>Escribe otro método sobrecargado con 2 parámetros x e y (ambos <code>double</code>), donde x e y representan los lados de un rectángulo. El método debe devolver el área del rectángulo. Si uno o ambos parámetros es/son negativos, devuelve -1.0 para indicar un valor no válido.</p>
+<div class="admonition note">
+<p class="admonition-title">Salida</p>
+<p>INPUT / OUTPUT</p>
+<ul>
+<li>area (5.0); devuelve 78.53975</li>
+<li>area (-1); devuelve -1.0</li>
+<li>area (5.0, 4.0); devuelve 20.0 (5 * 4 = 20)</li>
+<li>area (-1.0, 4.0); devuelve -1.0</li>
 </ul>
-<div style="display:none">
-
-- **PR 620** (RA4/ CE4a CE4b CE4d CE4e CE4f / IC2 / 5p). Crear una clase `Figura.java`. Escribe un método llamado area con un parámetro `double` llamado radio. El método debe devolver un valor `double` que represente el área de un círculo, calculada a partir del radio. Si el radio del parámetro es negativo, devuelve -1.0 para representar un valor no válido.
-
-    Escribe otro método sobrecargado con 2 parámetros x e y (ambos `double`), donde x e y representan los lados de un rectángulo. El método debe devolver el área del rectángulo. Si uno o ambos parámetros es/son negativos, devuelve -1.0 para indicar un valor no válido.
-
-    !!! note "Salida" 
-
-        INPUT / OUTPUT
-
-        - area (5.0); devuelve 78.53975
-        - area (-1); devuelve -1.0
-        - area (5.0, 4.0); devuelve 20.0 (5 * 4 = 20)
-        - area (-1.0, 4.0); devuelve -1.0
-
-    !!! tip "Ayuda" 
-
-        La fórmula para calcular el área de un rectángulo es x * y. La fórmula para calcular el área de un círculo es radio * radio * PI. Para PI, use una constante de la clase de matemáticas, por ejemplo, `Math.PI`;
-
-    Genera un método main donde pruebes todos los métodos. Recuerda que siempre que se puedan pedir datos por teclado, se han de pedir.
-
-- **PR 621** (RA4/ CE4a CE4b CE4d CE4e CE4f / IC2 / 5p). En un restaurante se requiere de un sistema de clasificación de pedidos de comida en
-función de la dieta a la que pertenezcan. Para ello se deberán desarrollar las dos clases que se proponen a continuación:
-
-    - `PedidosComida`: con atributos tipoDieta, `tiempoCoccion` y calorías y métodos `caloriasHora`, que recibe dos enteros (tiempo y calorías de la receta) y devuelve las calorías en una hora, `rebajarCalorias`, que recibe las calorías que se le rebajan a la receta, y `aumentarCalorias`, que recibe las calorías que se aumentan.
-    - `MainComida`: tiene dos métodos, main y menu.
-
-    El menú dará las siguientes opciones:
-
-    - Solicitar número de pedidos a llenar.
-    - Llenar todos los pedidos
-    - Seleccionar el pedido que se quiere modificar.
-    - Contar los pedidos de más de 500 calorías.
-    - Borrar todos los pedidos.
-
-    !!! info "Cálculos"
-
-        En los cálculos, una comida, por ejemplo, tiene 100 calorías y se tarda en hacer 100 minutos, si aumento en 10 calorías aumentaré en 10 minutos. Por lo que pasará a tener 110 calorías y un tiempo de cocción de 110 minutos. Si tras esto, decido bajarle 20 calorías, que sería un 18% de las 110, el tiempo bajaría también un 18%, quedándose en 90,2 minutos de cocción. 
-
-- **AP 622** (RA4/ CE4a CE4b CE4d CE4e CE4f / IC2 / 5p). Escribe una clase con el nombre Calculadora. La clase debe tener dos Atributos con los nombres `primerNumero` y `segundoNumero`, ambos de tipo double y privados. Codifica los siguientes métodos:
-
-    - Método llamado `getResultadoSuma` sin ningún parámetro, debe devolver el resultado de sumar los valores de campo de `primerNumero` y `segundoNumero`.
-    - Método llamado `getResultadoResta` sin ningún parámetro, debe devolver el resultado de restar los valores de campo de `segundoNumero` del `primerNumero`.
-    - Método llamado `getMultiplicationResult` sin ningún parámetro, debe devolver el resultado de multiplicar los valores de campo de `primerNumero` y `segundoNumero`.
-    - Método llamado `getDivisionResult` sin ningún parámetro, debe devolver el resultado de dividir los valores de campo de `primerNumero` por `segundoNumero`. En caso de  que el valor de `segundoNumero` sea 0, devuelve 0.
-
-    Escribe este código en una clase `MainCalculadora` en la que tengas al menos dos métodos: el propio main y dos métodos menú. El menú principal:
-
-    - Indique cuantas calculadoras vas a crear
-    - Seleccionas y rellenes una calculadora en concreto.
-    - Operar con una calculadora en concreto. Se lanzará el segundo menú que permitirá escoger las operaciones a realizar. Si el objeto no está inicializado por el usuario, se deberá inicializar.
-    - Salir del programa
 </div>
-
+<div class="admonition tip">
+<p class="admonition-title">Ayuda</p>
+<p>La fórmula para calcular el área de un rectángulo es x * y. La fórmula para calcular el área de un círculo es radio * radio * PI. Para PI, use una constante de la clase de matemáticas, por ejemplo, <code>Math.PI</code>;</p>
+</div>
+<p>Genera un método main donde pruebes todos los métodos. Recuerda que siempre que se puedan pedir datos por teclado, se han de pedir.</p>
+</li>
+<li>
+<p><strong><abbr title="Prácticas">PR</abbr> 624</strong> (<abbr title="Desarrolla programas organizados en clases analizando y aplicando los principios de la programación orientada a objetos.">RA4</abbr>/ <abbr title="Se ha reconocido la sintaxis, estructura y componentes típicos de una clase.">CE4a</abbr> <abbr title="Se han definido clases.">CE4b</abbr> <abbr title="Se han creado constructores.">CE4d</abbr> <abbr title="Se han desarrollado programas que instancien y utilicen objetos de las clases creadas anteriormente.">CE4e</abbr> <abbr title="Se han utilizado mecanismos para controlar la visibilidad de las clases y de sus miembros.">CE4f</abbr> / <abbr title="Rúbrica actividad individual.">IC2</abbr> / 5p). En un restaurante se requiere de un sistema de clasificación de pedidos de comida en
+función de la dieta a la que pertenezcan. Para ello se deberán desarrollar las dos clases que se proponen a continuación:</p>
+<ul>
+<li><code>PedidosComida</code>: con atributos tipoDieta, <code>tiempoCoccion</code> y calorías y métodos <code>caloriasHora</code>, que recibe dos enteros (tiempo y calorías de la receta) y devuelve las calorías en una hora, <code>rebajarCalorias</code>, que recibe las calorías que se le rebajan a la receta, y <code>aumentarCalorias</code>, que recibe las calorías que se aumentan.</li>
+<li><code>MainComida</code>: tiene dos métodos, main y menu.</li>
+</ul>
+<p>El menú dará las siguientes opciones:</p>
+<ul>
+<li>Solicitar número de pedidos a llenar.</li>
+<li>Llenar todos los pedidos</li>
+<li>Seleccionar el pedido que se quiere modificar.</li>
+<li>Contar los pedidos de más de 500 calorías.</li>
+<li>Borrar todos los pedidos.</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Cálculos</p>
+<p>En los cálculos, una comida, por ejemplo, tiene 100 calorías y se tarda en hacer 100 minutos, si aumento en 10 calorías aumentaré en 10 minutos. Por lo que pasará a tener 110 calorías y un tiempo de cocción de 110 minutos. Si tras esto, decido bajarle 20 calorías, que sería un 18% de las 110, el tiempo bajaría también un 18%, quedándose en 90,2 minutos de cocción. </p>
+</div>
+</li>
+<li>
+<p><strong><abbr title="Actividades de profundización.">AP</abbr> 625</strong> (<abbr title="Desarrolla programas organizados en clases analizando y aplicando los principios de la programación orientada a objetos.">RA4</abbr>/ <abbr title="Se ha reconocido la sintaxis, estructura y componentes típicos de una clase.">CE4a</abbr> <abbr title="Se han definido clases.">CE4b</abbr> <abbr title="Se han creado constructores.">CE4d</abbr> <abbr title="Se han desarrollado programas que instancien y utilicen objetos de las clases creadas anteriormente.">CE4e</abbr> <abbr title="Se han utilizado mecanismos para controlar la visibilidad de las clases y de sus miembros.">CE4f</abbr> / <abbr title="Rúbrica actividad individual.">IC2</abbr> / 5p). Escribe una clase con el nombre Calculadora. La clase debe tener dos Atributos con los nombres <code>primerNumero</code> y <code>segundoNumero</code>, ambos de tipo double y privados. Codifica los siguientes métodos:</p>
+<ul>
+<li>Método llamado <code>getResultadoSuma</code> sin ningún parámetro, debe devolver el resultado de sumar los valores de campo de <code>primerNumero</code> y <code>segundoNumero</code>.</li>
+<li>Método llamado <code>getResultadoResta</code> sin ningún parámetro, debe devolver el resultado de restar los valores de campo de <code>segundoNumero</code> del <code>primerNumero</code>.</li>
+<li>Método llamado <code>getMultiplicationResult</code> sin ningún parámetro, debe devolver el resultado de multiplicar los valores de campo de <code>primerNumero</code> y <code>segundoNumero</code>.</li>
+<li>Método llamado <code>getDivisionResult</code> sin ningún parámetro, debe devolver el resultado de dividir los valores de campo de <code>primerNumero</code> por <code>segundoNumero</code>. En caso de  que el valor de <code>segundoNumero</code> sea 0, devuelve 0.</li>
+</ul>
+<p>Escribe este código en una clase <code>MainCalculadora</code> en la que tengas al menos dos métodos: el propio main y dos métodos menú. El menú principal:</p>
+<ul>
+<li>Indique cuantas calculadoras vas a crear</li>
+<li>Seleccionas y rellenes una calculadora en concreto.</li>
+<li>Operar con una calculadora en concreto. Se lanzará el segundo menú que permitirá escoger las operaciones a realizar. Si el objeto no está inicializado por el usuario, se deberá inicializar.</li>
+<li>Salir del programa</li>
+</ul>
+</li>
+</ul>
 <!-- Resultados de Aprendizaje & Criterios de Evaluación -->
 <!-- Instrumentos de Evaluación -->
 <!-- Instrumentos de Calificación -->
@@ -2029,8 +2030,7 @@ función de la dieta a la que pertenezcan. Para ello se deberán desarrollar las
   
 </div>
       
-        
-<div class="md-social">
+        <div class="md-social">
   
     
     
@@ -2098,10 +2098,10 @@ función de la dieta a la que pertenezcan. Para ello se deberán desarrollar las
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["header.autohide", "toc.integrate", "navigation.indexes", "navigation.top", "navigation.tracking", "navigation.footer", "toc.follow", "content.tooltips", "content.code.copy"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["header.autohide", "toc.integrate", "navigation.indexes", "navigation.top", "navigation.tracking", "navigation.footer", "toc.follow", "content.tooltips", "content.code.copy"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../../assets/javascripts/bundle.50899def.min.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
