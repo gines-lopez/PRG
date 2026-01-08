@@ -3255,32 +3255,32 @@
 </ol>
 </div>
 <h2 id="actividades">Actividades<a class="headerlink" href="#actividades" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p><strong><abbr title="Actividades de clase.">AC</abbr> 701</strong> (<abbr title="Desarrolla programas organizados en clases analizando y aplicando los principios de la programación orientada a objetos.">RA4</abbr>/ <abbr title="Se han definido y utilizado clases heredadas.">CE4g</abbr> <abbr title="Se han creado y utilizado métodos estáticos.">CE4h</abbr> <abbr title="Se han creado y utilizado conjuntos y librerías de clases.">CE4i</abbr> / <abbr title="Escala de valores.">IC1</abbr> / 3p). Realiza la implementación de la siguiente imagen:</p>
+<p><figure markdown="span">
+    <a class="glightbox" href="../../img/ut07/03_HerenciaJava.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Herencia" src="../../img/ut07/03_HerenciaJava.png" width="700" /></a>
+</figure></p>
+<ul>
+<li><code>Persona</code> tiene como atributos: <code>dni</code>, <code>sexo</code> y <code>anyoNacimiento</code>. Además de los métodos que accedan y modifiquen las propiedades, se ha de programar un método que calcule la edad (solo el año).</li>
+<li><code>Alumno</code> tiene como atributo <code>etapaEducativa</code> y <code>provinciaVive</code>.</li>
+<li><code>Ingeniero</code> tiene como atributo <code>colegioAdscrito</code>. Y un método que es <code>calculoCuota</code> que si es industrial es gratuito, si es otro son 50€.</li>
+<li><code>Tecnico</code> tiene como atributo <code>gradoProfesional</code> y <code>anyoComienzo</code>. Además tiene un método que es <code>anyoExperiencia</code> que nos calcula cuantos años lleva trabajados desde su comienzo.</li>
+<li><code>Administrativo</code> tiene el atributo <code>administración</code>.</li>
+<li><code>Profesor</code> tiene el atributo <code>especialidad</code> y <code>anyoInicioTrabajo</code>. Tiene un método que es <code>anyosComoDocente</code> que calcula los años que lleva en el cuerpo.</li>
+<li><code>Interino</code> tiene como atributo bolsa, que indica el número de bolsas en las que está. En el constructor por defecto deberá marcar 1, pero en el sobrecargado sólo si se introduce 0.</li>
+<li><code>Plantilla</code> tiene <code>anyoOposicion</code> y el método <code>anyosFuncionarioCarrera</code>.</li>
+<li><code>Catedrático</code> un boolean que sea <code>esCatedratico</code>.</li>
+</ul>
+<p>Además hay que generar un main en el que se comprueben todos los objetos y métodos que se programen.</p>
+</li>
+<li>
+<p><strong><abbr title="Actividades de clase.">AC</abbr> 702</strong> (<abbr title="Desarrolla programas organizados en clases analizando y aplicando los principios de la programación orientada a objetos.">RA4</abbr>/ <abbr title="Se han definido y utilizado clases heredadas.">CE4g</abbr> <abbr title="Se han creado y utilizado métodos estáticos.">CE4h</abbr> <abbr title="Se han creado y utilizado conjuntos y librerías de clases.">CE4i</abbr> / <abbr title="Escala de valores.">IC1</abbr> / 3p). Implementa una clase base llamada <code>Vehiculo</code>, luego desarrolla una clase <code>Coche</code> que herede de la clase base. Por último, crea una nueva clase que tú quieras y sea específica de <code>Coche</code>, es decir, que herede de la clase <code>Coche</code>. Habrá que almacenar información sobre su estado y comportamiento (atributos y métodos) como, por ejemplo, nombre, velocidad, marcha, mover, ruedas, etc. </p>
+<p>Incluye los métodos cambiar de marchas, acelerar/desacelerar velocidad. Tendrás que decidir en qué clase se almacena qué información. Para el tipo más concreto de coche que has definido tendrás que añadir algo específico para ese tipo de coche. No olvides los constructores con todos los parámetros.</p>
+<p>Crea un método main de prueba</p>
+</li>
+</ul>
 <div style="display: none">
-
-- **AC 701** (RA4/ CE4g CE4h CE4i / IC1 / 3p). Realiza la implementación de la siguiente imagen:
-
-    <figure markdown="span">
-        ![Herencia](../../img/ut07/03_HerenciaJava.png){ width="700" }
-    </figure>
-
-    - `Persona` tiene como atributos: `dni`, `sexo` y `anyoNacimiento`. Además de los métodos que accedan y modifiquen las propiedades, se ha de programar un método que calcule la edad (solo el año).
-    - `Alumno` tiene como atributo `etapaEducativa` y `provinciaVive`.
-    - `Ingeniero` tiene como atributo `colegioAdscrito`. Y un método que es `calculoCuota` que si es industrial es gratuito, si es otro son 50€.
-    - `Tecnico` tiene como atributo `gradoProfesional` y `anyoComienzo`. Además tiene un método que es `anyoExperiencia` que nos calcula cuantos años lleva trabajados desde su comienzo.
-    - `Administrativo` tiene el atributo `administración`.
-    - `Profesor` tiene el atributo `especialidad` y `anyoInicioTrabajo`. Tiene un método que es `anyosComoDocente` que calcula los años que lleva en el cuerpo.
-    - `Interino` tiene como atributo bolsa, que indica el número de bolsas en las que está. En el constructor por defecto deberá marcar 1, pero en el sobrecargado sólo si se introduce 0.
-    - `Plantilla` tiene `anyoOposicion` y el método `anyosFuncionarioCarrera`.
-    - `Catedrático` un boolean que sea `esCatedratico`.
-
-    Además hay que generar un main en el que se comprueben todos los objetos y métodos que se programen.
-
-- **AC 702** (RA4/ CE4g CE4h CE4i / IC1 / 3p). Implementa una clase base llamada `Vehiculo`, luego desarrolla una clase `Coche` que herede de la clase base. Por último, crea una nueva clase que tú quieras y sea específica de `Coche`, es decir, que herede de la clase `Coche`. Habrá que almacenar información sobre su estado y comportamiento (atributos y métodos) como, por ejemplo, nombre, velocidad, marcha, mover, ruedas, etc. 
-
-    Incluye los métodos cambiar de marchas, acelerar/desacelerar velocidad. Tendrás que decidir en qué clase se almacena qué información. Para el tipo más concreto de coche que has definido tendrás que añadir algo específico para ese tipo de coche. No olvides los constructores con todos los parámetros.
-
-    Crea un método main de prueba
-
 - **AC 703** (RA4/ CE4g CE4h CE4i / IC1 / 3p). Escribe una clase con el nombre `Circulo`. La clase necesita un campo (variable de instancia) con radio de nombre de tipo doble. La clase debe tener un constructor con un parámetro de radio de tipo doble y debe inicializar los campos. En caso de que el parámetro de radio sea menor que 0, debe establecer el valor del campo de radio en 0.
 
     Escribe los siguientes métodos (métodos de instancia):
