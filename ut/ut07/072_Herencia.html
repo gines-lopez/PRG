@@ -3279,48 +3279,54 @@
 <p>Incluye los métodos cambiar de marchas, acelerar/desacelerar velocidad. Tendrás que decidir en qué clase se almacena qué información. Para el tipo más concreto de coche que has definido tendrás que añadir algo específico para ese tipo de coche. No olvides los constructores con todos los parámetros.</p>
 <p>Crea un método main de prueba</p>
 </li>
+<li>
+<p><strong><abbr title="Actividades de clase.">AC</abbr> 703</strong> (<abbr title="Desarrolla programas organizados en clases analizando y aplicando los principios de la programación orientada a objetos.">RA4</abbr>/ <abbr title="Se han definido y utilizado clases heredadas.">CE4g</abbr> <abbr title="Se han creado y utilizado métodos estáticos.">CE4h</abbr> <abbr title="Se han creado y utilizado conjuntos y librerías de clases.">CE4i</abbr> / <abbr title="Escala de valores.">IC1</abbr> / 3p). Escribe una clase con el nombre <code>Circulo</code>. La clase necesita un campo (variable de instancia) con radio de nombre de tipo doble. La clase debe tener un constructor con un parámetro de radio de tipo doble y debe inicializar los campos. En caso de que el parámetro de radio sea menor que 0, debe establecer el valor del campo de radio en 0.</p>
+<p>Escribe los siguientes métodos (métodos de instancia):</p>
+<ul>
+<li><code>getRadio</code> sin ningún parámetro, debe devolver el valor del campo de radio.</li>
+<li><code>getArea</code> sin ningún parámetro, debe devolver el área calculada (radio * radio * PI). Para PI use la constante Math.PI.</li>
+</ul>
+<p>Escriba una clase con el nombre <code>Cilindro</code> que extienda la clase <code>Circulo</code>. La clase necesita un campo (variable de instancia) de nombre altura de tipo doble. La clase necesita tener un constructor con dos parámetros radio y altura, ambos de tipo doble. En caso de que el parámetro de altura sea inferior a 0, debe establecer el valor del campo de altura en 0. Crea los siguientes métodos (métodos de instancia):</p>
+<ul>
+<li><code>getAltura</code> sin ningún parámetro, debe devolver el valor del campo de altura.</li>
+<li><code>getVolume</code> sin ningún parámetro, debe devolver el volumen calculado. Para calcular el volumen multiplica el área por la altura.</li>
+</ul>
+<p>Crea un método main con código de prueba</p>
+</li>
+<li>
+<p><strong><abbr title="Actividades de clase.">AC</abbr> 704</strong> (<abbr title="Desarrolla programas organizados en clases analizando y aplicando los principios de la programación orientada a objetos.">RA4</abbr>/ <abbr title="Se han definido y utilizado clases heredadas.">CE4g</abbr> <abbr title="Se han creado y utilizado métodos estáticos.">CE4h</abbr> <abbr title="Se han creado y utilizado conjuntos y librerías de clases.">CE4i</abbr> / <abbr title="Escala de valores.">IC1</abbr> / 3p).Escribe una clase <code>Herencia1</code> que contendrá el <code>main()</code> y una clase <code>Multimedia</code> para almacenar información de objetos de tipo multimedia (películas, discos, …). La clase <code>Multimedia</code>: </p>
+<ul>
+<li>Contendrá título, autor, formato y duración como atributos privados.</li>
+<li>El formato puede ser uno de los siguientes: wav, mp3, midi, avi, mov, mpg, cdaudio y dvd.</li>
+<li>El valor de todos esos atributos se pasa como parámetros al constructor al crear el objeto.</li>
+<li>Esta clase tiene, además, un método para devolver cada uno de los atributos y un método <code>toString</code> que devuelve la información del objeto.</li>
+</ul>
+<p>En la clase <code>Herencia1</code> se generarán los siguientes objetos:</p>
+<ul>
+<li>obj1 Blade Runner Ridley Scott DVD 117</li>
+<li>obj2 León, el profesional Luc Besson AVI 110</li>
+</ul>
+<p>La información de estos objetos se mostrará por pantalla mediante el método <code>toString</code></p>
+</li>
+<li>
+<p><strong><abbr title="Actividades de clase.">AC</abbr> 705</strong> (<abbr title="Desarrolla programas organizados en clases analizando y aplicando los principios de la programación orientada a objetos.">RA4</abbr>/ <abbr title="Se han definido y utilizado clases heredadas.">CE4g</abbr> <abbr title="Se han creado y utilizado métodos estáticos.">CE4h</abbr> <abbr title="Se han creado y utilizado conjuntos y librerías de clases.">CE4i</abbr> / <abbr title="Escala de valores.">IC1</abbr> / 3p). Escribe una clase <code>Película</code> que herede de la clase <code>Multimedia</code> anterior (<abbr title="Actividades de clase.">AC</abbr> 704):</p>
+<ul>
+<li>Esta clase tiene, además de los atributos heredados, los atributos privados actor principal y actriz principal.</li>
+<li>Se permite que uno de los dos sea nulo (no exista o se desconozca), pero no los dos.</li>
+<li>La clase debe tener dos métodos para obtener los nuevos atributos y debe sobrescribir el método toString para que devuelva, además de la información que hereda, la nueva información.</li>
+<li>Modifica la clase principal <code>Herencia1</code> para que los objetos instanciados tengan la siguiente información:<ul>
+<li>Objeto Título Autor Formato Duración Actor princ. Actriz princ.</li>
+<li>obj1 Blade Runner Ridley Scott DVD 117 Harrison Ford</li>
+<li>obj2 León, el profesional Luc Besson AVI 110 Jean Reno Natalie Portman</li>
+</ul>
+</li>
+<li>La información de estos objetos se mostrará por pantalla mediante el método <code>toString()</code>.</li>
+</ul>
+</li>
 </ul>
 <div style="display: none">
-- **AC 703** (RA4/ CE4g CE4h CE4i / IC1 / 3p). Escribe una clase con el nombre `Circulo`. La clase necesita un campo (variable de instancia) con radio de nombre de tipo doble. La clase debe tener un constructor con un parámetro de radio de tipo doble y debe inicializar los campos. En caso de que el parámetro de radio sea menor que 0, debe establecer el valor del campo de radio en 0.
 
-    Escribe los siguientes métodos (métodos de instancia):
-
-    - `getRadio` sin ningún parámetro, debe devolver el valor del campo de radio.
-    - `getArea` sin ningún parámetro, debe devolver el área calculada (radio * radio * PI). Para PI use la constante Math.PI.
-
-    Escriba una clase con el nombre `Cilindro` que extienda la clase `Circulo`. La clase necesita un campo (variable de instancia) de nombre altura de tipo doble. La clase necesita tener un constructor con dos parámetros radio y altura, ambos de tipo doble. En caso de que el parámetro de altura sea inferior a 0, debe establecer el valor del campo de altura en 0. Crea los siguientes métodos (métodos de instancia):
-
-    - `getAltura` sin ningún parámetro, debe devolver el valor del campo de altura.
-    - `getVolume` sin ningún parámetro, debe devolver el volumen calculado. Para calcular el volumen multiplica el área por la altura.
-
-    Crea un método main con código de prueba
-
-- **AC 704** (RA4/ CE4g CE4h CE4i / IC1 / 3p).Escribe una clase `Herencia1` que contendrá el `main()` y una clase `Multimedia` para almacenar información de objetos de tipo multimedia (películas, discos, …). La clase `Multimedia`: 
-
-    - Contendrá título, autor, formato y duración como atributos privados.
-    - El formato puede ser uno de los siguientes: wav, mp3, midi, avi, mov, mpg, cdaudio y dvd.
-    - El valor de todos esos atributos se pasa como parámetros al constructor al crear el objeto.
-    - Esta clase tiene, además, un método para devolver cada uno de los atributos y un método `toString` que devuelve la información del objeto.
-
-    En la clase `Herencia1` se generarán los siguientes objetos:
-
-    - obj1 Blade Runner Ridley Scott DVD 117
-    - obj2 León, el profesional Luc Besson AVI 110
-
-    La información de estos objetos se mostrará por pantalla mediante el método `toString`
-
-- **AC 705** (RA4/ CE4g CE4h CE4i / IC1 / 3p). Escribe una clase `Película` que herede de la clase `Multimedia` anterior (AC 704):
-
-    * Esta clase tiene, además de los atributos heredados, los atributos privados actor principal y actriz principal.
-    * Se permite que uno de los dos sea nulo (no exista o se desconozca), pero no los dos.
-    * La clase debe tener dos métodos para obtener los nuevos atributos y debe sobrescribir el método toString para que devuelva, además de la información que hereda, la nueva información.
-    * Modifica la clase principal `Herencia1` para que los objetos instanciados tengan la siguiente información:
-        - Objeto Título Autor Formato Duración Actor princ. Actriz princ.
-        - obj1 Blade Runner Ridley Scott DVD 117 Harrison Ford
-        - obj2 León, el profesional Luc Besson AVI 110 Jean Reno Natalie Portman
-    * La información de estos objetos se mostrará por pantalla mediante el método `toString()`.
-
-- **AR 706** (RA4/ CE4g CE4h CE4i / IC1 / 3p). Escribe una clase `Disco` que herede de la clase `Multimedia`:
+- **AC 706** (RA4/ CE4g CE4h CE4i / IC1 / 3p). Escribe una clase `Disco` que herede de la clase `Multimedia`:
 
     * Esta clase tiene, además de los atributos heredados, un atributo privado para almacenar el género al que pertenece (rock, pop, funk, etc).
     * La clase debe tener un método para obtener el nuevo atributo y debe sobrescribir el método `toString` para que devuelva, además de la información que hereda, la nueva información.
