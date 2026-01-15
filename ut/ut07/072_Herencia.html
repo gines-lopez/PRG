@@ -3341,25 +3341,18 @@
 <p><strong><abbr title="Prácticas">PR</abbr> 707</strong> (<abbr title="Desarrolla programas aplicando características avanzadas de los lenguajes orientados a objetos y del entorno de programación.">RA7</abbr>/ <abbr title="Se han identificado los conceptos de herencia, superclase y subclase.">CE7a</abbr> <abbr title="Se han utilizado modificadores para bloquear y forzar la herencia de clases y métodos.">CE7b</abbr> <abbr title="Se ha reconocido la incidencia de los constructores en la herencia.">CE7c</abbr> <abbr title="Se han creado clases heredadas que sobrescriben la implementación de métodos de la superclase.">CE7d</abbr> <abbr title="Se han diseñado y aplicado jerarquías de clases.">CE7e</abbr> <abbr title="Se han probado y depurado las jerarquías de clases.">CE7f</abbr> <abbr title="Se han realizado programas que implementen y utilicen jerarquías de clases.">CE7g</abbr> <abbr title="Se ha comentado y documentado el código.">CE7h</abbr> <abbr title="Se han identificado y evaluado los escenarios de utilización de la herencia y la composición.">CE7j</abbr> / <abbr title="Rúbrica actividad individual.">IC2</abbr> / 5p). Diseña y programa las clases necesarias para implementar los pedidos de un restaurante de comida rápida. El restaurante tiene una carta
 dividida en distintas categorías: entradas, bocadillos, hamburguesas y postres.</p>
 <p>Todos los productos pertenecen a una sola categoría y tienen un nombre, descripción y precio.
-Cuando un cliente quiere hacer un pedido, navega por la carta y selecciona los productos que desea. Al elegir un producto, podrá elegir la cantidad y opcionalmente hacer un comentario sobre el producto. Se pueden hacer dos tipos de pedidos, para recoger y para llevar. </p>
+Cuando un cliente quiere hacer un pedido, navega por la carta y selecciona los productos que desea. Al elegir un producto, podrá elegir la cantidad y opcionalmente hacer un comentario sobre el pedido. Se pueden hacer dos tipos de pedidos, para recoger y para llevar. </p>
 <p>Si el pedido es para recoger, solo se requiere el nombre del cliente. Si es para llevar, además se requiere la dirección y el teléfono. Cuando se finaliza el pedido, el restaurante lo almacena para procesarlo, e informa al cliente del coste total de su pedido, añadiendo 2€ de coste si el pedido es para llevar, y le informará aproximadamente del tiempo que tardará, siendo 10 minutos por producto distinto que incluya el pedido más 15 minutos de llevarlo en caso de servicio a domicilio.</p>
 </li>
+<li>
+<p><strong><abbr title="Prácticas">PR</abbr> 708</strong> (<abbr title="Desarrolla programas aplicando características avanzadas de los lenguajes orientados a objetos y del entorno de programación.">RA7</abbr>/ <abbr title="Se han identificado los conceptos de herencia, superclase y subclase.">CE7a</abbr> <abbr title="Se han utilizado modificadores para bloquear y forzar la herencia de clases y métodos.">CE7b</abbr> <abbr title="Se ha reconocido la incidencia de los constructores en la herencia.">CE7c</abbr> <abbr title="Se han creado clases heredadas que sobrescriben la implementación de métodos de la superclase.">CE7d</abbr> <abbr title="Se han diseñado y aplicado jerarquías de clases.">CE7e</abbr> <abbr title="Se han probado y depurado las jerarquías de clases.">CE7f</abbr> <abbr title="Se han realizado programas que implementen y utilicen jerarquías de clases.">CE7g</abbr> <abbr title="Se ha comentado y documentado el código.">CE7h</abbr> <abbr title="Se han identificado y evaluado los escenarios de utilización de la herencia y la composición.">CE7j</abbr> / <abbr title="Rúbrica actividad individual.">IC2</abbr> / 5p). Diseña y programa las clases necesarias para implementar el sistema de reservas de un restaurante.</p>
+<p>El restaurante está formado por gran salón con una capacidad máxima de 50 personas que no se puede superar en ningún caso. </p>
+<p>El salón lo podemos configurar con distintos tipos de mesas, cuadradas para 4 comensales, mesas redondas pequeñas para 8 y mesas redondas grandes para 12 comensales. Tenemos un n.º limitado de cada tipo de mesa, a definir por el programador.</p>
+<p>Cuando se hace una reserva, hay que asignarle el número adecuado de mesas, teniendo en cuenta que las mesas redondas no se pueden juntar, y que cuando juntamos las cuadradas perdemos capacidad, las de las esquinas solo admitirán 3 comensales y las del centro 2. Además del salón, el restaurante dispone de 2 reservados con un capacidad máxima de 8 y de 15 comensales.</p>
+<p>Los reservados solo admiten una única reserva, mientras que en el salón puede haber un número indefinido siempre que no se supere su capacidad máxima.</p>
+<p>Cuando se realiza una reserva, el cliente indicará su nombre, teléfono, número de comensales y si desea reservado. El restaurante, procesará la reserva y la almacenará si es posible indicando el n.º y tipo de mesas que requiere e informará al cliente de que su reserva ha sido guardada. En caso de que la reserva no sea posible, también informará al cliente.</p>
+</li>
 </ul>
-<div style="display: none">
-- **PR 708** (RA7/ CE7a CE7b CE7c CE7d CE7e CE7f CE7g CE7h CE7j / IC2 / 5p). Diseña y programa las clases necesarias para implementar el sistema de reservas de un restaurante.
-
-    El restaurante está formado por gran salón con una capacidad máxima de 50 personas que no se puede superar en ningún caso. 
-
-    El salón lo podemos configurar con distintos tipos de mesas, cuadradas para 4 comensales, mesas redondas pequeñas para 8 y mesas redondas grandes para 12 comensales. Tenemos un n.º limitado de cada tipo de mesa, a definir por el programador.
-
-    Cuando se hace una reserva, hay que asignarle el número adecuado de mesas, teniendo en cuenta que las mesas redondas no se pueden juntar, y que cuando juntamos las cuadradas perdemos capacidad, las de las esquinas solo admitirán 3 comensales y las del centro 2. Además del salón, el restaurante dispone de 2 reservados con un capacidad máxima de 8 y de 15 comensales.
-
-    Los reservados solo admiten una única reserva, mientras que en el salón puede haber un número indefinido siempre que no se supere su capacidad máxima.
-
-    Cuando se realiza una reserva, el cliente indicará su nombre, teléfono, número de comensales y si desea reservado. El restaurante, procesará la reserva y la almacenará si es posible indicando el n.º y tipo de mesas que requiere e informará al cliente de que su reserva ha sido guardada. En caso de que la reserva no sea posible, también informará al cliente.
-
-</div>
-
 <!-- Resultados de Aprendizaje & Criterios de Evaluación -->
 <!-- Instrumentos de Evaluación -->
 <!-- Instrumentos de Calificación -->
