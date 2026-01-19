@@ -3151,43 +3151,60 @@
   <a class="glightbox" href="../../img/ut07/06_Scope.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Herencia" src="../../img/ut07/06_Scope.png" /></a>
 </figure>
 <h2 id="actividades">Actividades<a class="headerlink" href="#actividades" title="Permanent link">&para;</a></h2>
-<div style="display: none">
-
-- **AC 710** (RA7/ CE7a CE7b CE7c CE7d CE7e CE7f CE7g CE7h CE7j / IC1 / 3p). Usando composición has de crear un total de 5 clases de la siguiente forma:
-
-    - a. Crea una clase llamada `Lampara` con tres variables de instancia: `estilo` de tipo `String`, `batería` de tipo `booleano` y `calificación` de tipo entero. Todas las variables deben ser privadas. La clase se debe construir con los tres parámetros. Añade 4 métodos:
-
-      - `encender` sin tipo de retorno y debe imprimir el mensaje de que la lámpara se ha encendido, 
-      - `getEstilo` devuelve el estilo de la lámpara, 
-      - `hayBateria` devuelve el booleano de batería y 
-      - `getCalificacion` que devuelve la calificación de la lámpara.
-
-    - b. Crea una clase llamada `Cama` con 5 atributos privados: `estilo` `String`, `almohadas`, `altura`, `sabanas` y `colcha` de tipo entero. El constructor debe ser implementado con esos 5 atributos. Agrega los métodos: 
-
-      - `hacer` no devuelve nada e imprime que se ha hecho la cama, 
-      - los `getters` de estilo, almohadas, altura, sábanas y colcha.
-
-    - c. Añade una clase llamada `Techo` con dos variables: `altura` y `color` de tipo entero. Constructor con todos los parámetros. Y los dos métodos `getter`.
-    - d. Crea una clase llamada `Pared` con una variable `dirección` de tipo `String`, su constructor con una variable y el método `getter`.
-    - e. La última clase será `Habitación` y contendrá 8 variables de instancia: `nombre` de tipo `String`, `pared1`, `pared2`, `pared3` y `pared4` de tipo Pared, `techo` de tipo `Techo`, `cama` de tipo `Cama` y `lampara` de tipo `Lampara`. El constructor debe contener las 8 variables. La clase debe tener dos métodos: 
-
-      - `getLampara` que devuelve el objeto lampara 
-      - `hacerLaCama` que imprime el mensaje se está haciendo la cama y llama al método `hacer` en la clase `Cama`.
-
-    - f. Crea una clase `Main` con un método `main` que pruebe el código.
-    - g. Añade código y métodos para probar el método encender de la clase `lampara`.
-
-
-- **AC 711** (RA7/ CE7a CE7b CE7c CE7d CE7e CE7f CE7g CE7h CE7j / IC1 / 3p). Teniendo en cuenta el principio de encapsulación usado en POO crea una clase llamada `Impresora`, que simulará una impresora real. Debe tener los campos de nivel de tóner, número de páginas impresas y si es una impresora con impresión a doble cara. Añade:
-
-    - a. Un método para añadir una cantidad de tóner al nivel actual, este método actualizará el nivel de tóner (hasta un máximo 100%), la cantidad de tóner que se va a añadir debe estar entre 0-100. Comprobar también que al añadir la cantidad de tóner no se supere el nivel de tóner. Si cualquier condición falla debe devolver -1 en caso contrario se devuelve el nuevo nivel de tóner.
-    - b. Otro método que simule la impresión de páginas (el cuál debe actualizar el número de páginas impresas). Se le pasarán las páginas a imprimir. También se tendrá en cuenta si la impresora es a doble cara, ya que entonces se habrá de calcular cuántas páginas se imprimen. El método debe devolver las páginas a imprimir y actualizará el valor del número de páginas impresas.
-    - c. Método getter que devuelve el número de páginas impresas.
-    - d. Decide que visibilidad van a tener los campos, si es necesario un constructor o no y cualquier cosa que creas necesaria.
-    - e. Crea una clase `MainEncapsulacion` con un `main` con código de prueba.
-
-</div>
-
+<ul>
+<li>
+<p><strong><abbr title="Actividades de clase.">AC</abbr> 710</strong> (<abbr title="Desarrolla programas aplicando características avanzadas de los lenguajes orientados a objetos y del entorno de programación.">RA7</abbr>/ <abbr title="Se han identificado los conceptos de herencia, superclase y subclase.">CE7a</abbr> <abbr title="Se han utilizado modificadores para bloquear y forzar la herencia de clases y métodos.">CE7b</abbr> <abbr title="Se ha reconocido la incidencia de los constructores en la herencia.">CE7c</abbr> <abbr title="Se han creado clases heredadas que sobrescriben la implementación de métodos de la superclase.">CE7d</abbr> <abbr title="Se han diseñado y aplicado jerarquías de clases.">CE7e</abbr> <abbr title="Se han probado y depurado las jerarquías de clases.">CE7f</abbr> <abbr title="Se han realizado programas que implementen y utilicen jerarquías de clases.">CE7g</abbr> <abbr title="Se ha comentado y documentado el código.">CE7h</abbr> <abbr title="Se han identificado y evaluado los escenarios de utilización de la herencia y la composición.">CE7j</abbr> / <abbr title="Escala de valores.">IC1</abbr> / 3p). Usando composición has de crear un total de 5 clases de la siguiente forma:</p>
+<ul>
+<li>
+<p>a. Crea una clase llamada <code>Lampara</code> con tres variables de instancia: <code>estilo</code> de tipo <code>String</code>, <code>batería</code> de tipo <code>booleano</code> y <code>calificación</code> de tipo entero. Todas las variables deben ser privadas. La clase se debe construir con los tres parámetros. Añade 4 métodos:</p>
+</li>
+<li>
+<p><code>encender</code> sin tipo de retorno y debe imprimir el mensaje de que la lámpara se ha encendido, </p>
+</li>
+<li><code>getEstilo</code> devuelve el estilo de la lámpara, </li>
+<li><code>hayBateria</code> devuelve el booleano de batería y </li>
+<li>
+<p><code>getCalificacion</code> que devuelve la calificación de la lámpara.</p>
+</li>
+<li>
+<p>b. Crea una clase llamada <code>Cama</code> con 5 atributos privados: <code>estilo</code> <code>String</code>, <code>almohadas</code>, <code>altura</code>, <code>sabanas</code> y <code>colcha</code> de tipo entero. El constructor debe ser implementado con esos 5 atributos. Agrega los métodos: </p>
+</li>
+<li>
+<p><code>hacer</code> no devuelve nada e imprime que se ha hecho la cama, </p>
+</li>
+<li>
+<p>los <code>getters</code> de estilo, almohadas, altura, sábanas y colcha.</p>
+</li>
+<li>
+<p>c. Añade una clase llamada <code>Techo</code> con dos variables: <code>altura</code> y <code>color</code> de tipo entero. Constructor con todos los parámetros. Y los dos métodos <code>getter</code>.</p>
+</li>
+<li>d. Crea una clase llamada <code>Pared</code> con una variable <code>dirección</code> de tipo <code>String</code>, su constructor con una variable y el método <code>getter</code>.</li>
+<li>
+<p>e. La última clase será <code>Habitación</code> y contendrá 8 variables de instancia: <code>nombre</code> de tipo <code>String</code>, <code>pared1</code>, <code>pared2</code>, <code>pared3</code> y <code>pared4</code> de tipo Pared, <code>techo</code> de tipo <code>Techo</code>, <code>cama</code> de tipo <code>Cama</code> y <code>lampara</code> de tipo <code>Lampara</code>. El constructor debe contener las 8 variables. La clase debe tener dos métodos: </p>
+</li>
+<li>
+<p><code>getLampara</code> que devuelve el objeto lampara </p>
+</li>
+<li>
+<p><code>hacerLaCama</code> que imprime el mensaje se está haciendo la cama y llama al método <code>hacer</code> en la clase <code>Cama</code>.</p>
+</li>
+<li>
+<p>f. Crea una clase <code>Main</code> con un método <code>main</code> que pruebe el código.</p>
+</li>
+<li>g. Añade código y métodos para probar el método encender de la clase <code>lampara</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong><abbr title="Actividades de clase.">AC</abbr> 711</strong> (<abbr title="Desarrolla programas aplicando características avanzadas de los lenguajes orientados a objetos y del entorno de programación.">RA7</abbr>/ <abbr title="Se han identificado los conceptos de herencia, superclase y subclase.">CE7a</abbr> <abbr title="Se han utilizado modificadores para bloquear y forzar la herencia de clases y métodos.">CE7b</abbr> <abbr title="Se ha reconocido la incidencia de los constructores en la herencia.">CE7c</abbr> <abbr title="Se han creado clases heredadas que sobrescriben la implementación de métodos de la superclase.">CE7d</abbr> <abbr title="Se han diseñado y aplicado jerarquías de clases.">CE7e</abbr> <abbr title="Se han probado y depurado las jerarquías de clases.">CE7f</abbr> <abbr title="Se han realizado programas que implementen y utilicen jerarquías de clases.">CE7g</abbr> <abbr title="Se ha comentado y documentado el código.">CE7h</abbr> <abbr title="Se han identificado y evaluado los escenarios de utilización de la herencia y la composición.">CE7j</abbr> / <abbr title="Escala de valores.">IC1</abbr> / 3p). Teniendo en cuenta el principio de encapsulación usado en <abbr title="Programación Orientada a Objetos">POO</abbr> crea una clase llamada <code>Impresora</code>, que simulará una impresora real. Debe tener los campos de nivel de tóner, número de páginas impresas y si es una impresora con impresión a doble cara. Añade:</p>
+<ul>
+<li>a. Un método para añadir una cantidad de tóner al nivel actual, este método actualizará el nivel de tóner (hasta un máximo 100%), la cantidad de tóner que se va a añadir debe estar entre 0-100. Comprobar también que al añadir la cantidad de tóner no se supere el nivel de tóner. Si cualquier condición falla debe devolver -1 en caso contrario se devuelve el nuevo nivel de tóner.</li>
+<li>b. Otro método que simule la impresión de páginas (el cuál debe actualizar el número de páginas impresas). Se le pasarán las páginas a imprimir. También se tendrá en cuenta si la impresora es a doble cara, ya que entonces se habrá de calcular cuántas páginas se imprimen. El método debe devolver las páginas a imprimir y actualizará el valor del número de páginas impresas.</li>
+<li>c. Método getter que devuelve el número de páginas impresas.</li>
+<li>d. Decide que visibilidad van a tener los campos, si es necesario un constructor o no y cualquier cosa que creas necesaria.</li>
+<li>e. Crea una clase <code>MainEncapsulacion</code> con un <code>main</code> con código de prueba.</li>
+</ul>
+</li>
+</ul>
 <!-- Resultados de Aprendizaje & Criterios de Evaluación -->
 <!-- Instrumentos de Evaluación -->
 <!-- Instrumentos de Calificación -->
